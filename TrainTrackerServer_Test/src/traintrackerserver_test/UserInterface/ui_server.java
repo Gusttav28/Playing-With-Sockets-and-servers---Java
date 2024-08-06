@@ -17,11 +17,11 @@ import javax.swing.JTextArea;
 
 import traintrackerserver_testl.thread;
 
-public class ui extends JFrame{
+public class ui_server extends JFrame{
     private JButton button, button2;
     private JPanel panel;
-    public ui(){
-        this.setTitle("Test for server");
+    public ui_server(){
+        this.setTitle("Server");
         this.setSize(300, 200);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,7 +31,7 @@ public class ui extends JFrame{
         button = new JButton("Test");
         button.setBounds(10, 20, 100, 200);
         panel.add(button);
-        button2 = new JButton("Test2");
+        button2 = new JButton("Activate");
         button2.setBounds(30, 20, 100, 200);
         panel.add(button2);
         this.add(panel);
@@ -81,7 +81,7 @@ public class ui extends JFrame{
                             if (message.startsWith("run")){
                                 thread thread1 = new thread();
                                 thread1.start();
-                                JOptionPane.showMessageDialog(null, "its working");
+                                JOptionPane.showMessageDialog(null, "Its working");
                                 try {
                                     Thread.sleep(200);
                                 } catch (Exception ex) {

@@ -1,4 +1,4 @@
-package traintrackerserver_test.UserInterface;
+package traintrackerserver_client.UserInterface;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
